@@ -65,3 +65,35 @@ produtos.forEach((item) => {
 console.log(`Vestuário: ${vestuario}`);
 console.log(`Eletrônicos: ${eletronicos}`);
 console.log(`Eletrodomésticos: ${eletrodomesticos}`);
+
+// ------------
+
+const numeros2 = [2, 4, 6, 8];
+
+const numerosDobrado = numeros2.map(item => item * 2);
+console.log(numerosDobrado);
+
+// --------------
+
+const nomes = ['Maria', 'João', 'Ana'];
+
+const nomesObjeto = nomes.map(item => {
+    return {nome: `${item}`, tamanho: `${item.length}`}
+});
+
+console.log(nomesObjeto);
+
+
+// ----------------------
+
+const produtos2 = [
+  { nome: 'Camiseta', preco: 49.9 },
+  { nome: 'Tênis', preco: 199.99 },
+  { nome: 'Boné', preco: 29.5 }
+];
+
+const produtosReais = produtos2.map(item => {
+    return `${item.nome} - R$ ${item.preco.toFixed(2).replace('.', ',')}`
+})
+
+console.log(produtosReais);
