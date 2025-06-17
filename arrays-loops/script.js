@@ -148,3 +148,26 @@ const faturamentoTotal = produtos3.reduce((acumulador, produto) => {
 }, 0);
 
 console.log(faturamentoTotal);
+
+
+// ---------------------------
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+const par = numbers.filter(number => {
+    return number % 2 === 0;
+});
+
+console.log(par);
+
+
+// -------------------
+
+const estoque = 20;
+
+const estoqueMaiorQue = produtos3.filter((produto => {
+    return produto = produto.quantidade >= estoque;
+}));
+
+console.log(estoqueMaiorQue);
