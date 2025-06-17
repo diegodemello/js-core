@@ -97,3 +97,54 @@ const produtosReais = produtos2.map(item => {
 })
 
 console.log(produtosReais);
+
+
+// -----------------------
+
+
+const numeros3 = [1,2,3,4];
+
+const soma2 = numeros3.reduce((acumulador, valorAtual) => {
+    const total = acumulador + valorAtual;
+    
+    return total;
+});
+
+console.log(soma2);
+
+
+// -----------------------
+
+// 3.516,8
+const produtos3 = [
+  {
+    nome: 'Camiseta',
+    preco: 49.90,
+    quantidade: 15,
+    descricao: 'Camiseta 100% algodão, disponível em várias cores.'
+  },
+  {
+    nome: 'Boné',
+    preco: 29.50,
+    quantidade: 20,
+    descricao: 'Boné ajustável com proteção UV.'
+  },
+  {
+    nome: 'Calça Jeans',
+    preco: 119.90,
+    quantidade: 10,
+    descricao: 'Calça jeans tradicional com lavagem clara.'
+  },
+  {
+    nome: 'Mochila',
+    preco: 139.90,
+    quantidade: 7,
+    descricao: 'Mochila resistente com vários compartimentos.'
+  }
+];
+
+const faturamentoTotal = produtos3.reduce((acumulador, produto) => {
+    return faturamento = acumulador + (produto.preco * produto.quantidade);
+}, 0);
+
+console.log(faturamentoTotal);
